@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./redux/redux.min.js"></script>
+</head>
+<body>
+    <script>
+        
+        // Valor inicial do estado da aplicação
+        const initialState = {
+            nome: 'Naruto',
+            id:199
+        }
+
+        // O reducer é uma maquininha de mudar estado. Você insere o estado inicial e uma ação.
+        // Essa função será incarregada de definir como esse 
+        function reducer(state= initialState, action){
+            return state
+        }
+
+        // O estado atual da aplicação será guardado em um objeto chamado store
+        const store = Redux.createStore(reducer);
+        
+        console.log("store: ", store);
+        console.log("store.getState(): ", store.getState());
+
+    </script>
+</body>
+</html>
